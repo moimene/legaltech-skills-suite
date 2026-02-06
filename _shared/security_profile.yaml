@@ -1,0 +1,31 @@
+# Perfil de Seguridad TEE Común
+# Todas las skills heredan estas restricciones base
+
+security_profile:
+  network_access: DENIED
+  file_system: READ_ONLY_INPUT
+  memory_protection: ENCLAVE_ISOLATED
+  data_retention: NONE
+  audit_logging: LOCAL_ONLY
+
+# Herramientas permitidas
+allowed_tools:
+  - python_sandbox
+  - local_llm_inference
+  - pdf_parser_local
+  - docx_parser
+  - numpy_pandas
+  - networkx
+  - scipy
+
+# Modelos LLM recomendados
+recommended_models:
+  - llama-3-70b-instruct
+  - mixtral-8x22b-instruct
+  - qwen2-72b-instruct
+
+# Configuración de inferencia
+inference_defaults:
+  temperature: 0.2
+  top_p: 0.9
+  max_output_tokens: 2048
