@@ -119,6 +119,41 @@
         "topology": "Contabilidad → Matching → Claim Export"
     },
     {
+        "id": "dac6-reporter",
+        "name": "DAC6 Reporter",
+        "area": "fiscal",
+        "description": "Identificación y reporte de mecanismos transfronterizos notificables bajo DAC6 y Ley 10/2020",
+        "topology": "Operación → Hallmarks A-E → Main Benefit Test → Modelo 234"
+    },
+    {
+        "id": "pillar-two-analyzer",
+        "name": "Pillar Two Analyzer",
+        "area": "fiscal",
+        "description": "Análisis de cumplimiento Impuesto Mínimo Global (15%) bajo GloBE Rules y QDMTT",
+        "topology": "Financials → ETR Jurisdiccional → Top-up Tax → GloBE Return"
+    },
+    {
+        "id": "tax-treaty-navigator",
+        "name": "Tax Treaty Navigator",
+        "area": "fiscal",
+        "description": "Navegador de 95+ CDI españoles con análisis MLI, treaty shopping y beneficial ownership",
+        "topology": "Renta + País → CDI Aplicable → MLI Impact → Tasa Final"
+    },
+    {
+        "id": "wht-optimizer",
+        "name": "WHT Optimizer",
+        "area": "fiscal",
+        "description": "Optimización de retenciones en pagos al exterior bajo directivas UE y CDI",
+        "topology": "Pago → Directivas/CDI → Retención Óptima → Procedimiento"
+    },
+    {
+        "id": "rd-technical-reporter",
+        "name": "R+D Technical Reporter",
+        "area": "fiscal",
+        "description": "Preparación de informes técnicos para deducciones I+D+i según Frascati y CDTI",
+        "topology": "Proyecto → Clasificación → Informe Técnico → Base Deducción"
+    },
+    {
         "id": "bias-auditor",
         "name": "Bias Auditor",
         "area": "laboral",
