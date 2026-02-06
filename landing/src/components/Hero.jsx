@@ -2,9 +2,9 @@ import { Shield, Lock, Database, Cpu } from 'lucide-react';
 
 export default function Hero({ skillCount }) {
   return (
-    <header 
+    <header
       className="hero"
-      style={{ 
+      style={{
         backgroundColor: '#004438',
         color: '#ffffff',
         padding: 'var(--g-space-8) 0',
@@ -15,10 +15,11 @@ export default function Hero({ skillCount }) {
     >
       <div className="container">
         <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-4)', marginBottom: 'var(--g-space-4)' }}>
-          <Shield size={48} strokeWidth={1.5} />
-          <span 
-            style={{ 
+          <Shield size={48} strokeWidth={1.5} color="#ffffff" />
+          <span
+            style={{
               backgroundColor: 'var(--g-brand-bright)',
+              color: '#ffffff',
               padding: '4px 12px',
               borderRadius: 'var(--g-radius-full)',
               fontSize: '0.75rem',
@@ -30,22 +31,23 @@ export default function Hero({ skillCount }) {
             TEE Secure Enclave
           </span>
         </div>
-        
-        <h1 
-          style={{ 
-            fontSize: '3rem', 
-            fontWeight: 700, 
+
+        <h1
+          style={{
+            fontSize: '3rem',
+            fontWeight: 700,
             marginBottom: 'var(--g-space-4)',
-            lineHeight: 1.1
+            lineHeight: 1.1,
+            color: '#ffffff'
           }}
         >
           LegalTech Skills Suite
         </h1>
-        
-        <p 
-          style={{ 
-            fontSize: '1.25rem', 
-            opacity: 0.9, 
+
+        <p
+          style={{
+            fontSize: '1.25rem',
+            color: '#ffffff',
             maxWidth: '600px',
             marginBottom: 'var(--g-space-6)',
             lineHeight: 1.6
@@ -54,19 +56,19 @@ export default function Hero({ skillCount }) {
           {skillCount} skills especializadas para análisis legal en entornos de ejecución confiable (TEE).
           Procesamiento local, sin exposición de datos sensibles.
         </p>
-        
+
         <div style={{ display: 'flex', gap: 'var(--g-space-6)', flexWrap: 'wrap' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', opacity: 0.8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', color: '#ffffff' }}>
             <Lock size={18} />
-            <span style={{ fontSize: '0.875rem' }}>Sin acceso a red</span>
+            <span style={{ fontSize: '0.875rem', fontWeight: 500 }}>Sin acceso a red</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', opacity: 0.8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', color: '#ffffff' }}>
             <Database size={18} />
-            <span style={{ fontSize: '0.875rem' }}>Solo lectura de inputs</span>
+            <span style={{ fontSize: '0.875rem', fontWeight: 500 }}>Solo lectura de inputs</span>
           </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', opacity: 0.8 }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)', color: '#ffffff' }}>
             <Cpu size={18} />
-            <span style={{ fontSize: '0.875rem' }}>Datos en RAM únicamente</span>
+            <span style={{ fontSize: '0.875rem', fontWeight: 500 }}>Datos en RAM únicamente</span>
           </div>
         </div>
       </div>
