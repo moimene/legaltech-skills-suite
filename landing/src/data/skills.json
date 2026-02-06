@@ -1,0 +1,191 @@
+[
+    {
+        "id": "judicial-profiler",
+        "name": "Judicial Profiler",
+        "area": "litigios",
+        "description": "Predice inclinación del juez mediante NLP Sentiment Analysis sobre sentencias previas",
+        "topology": "Sentencias PDF → OCR → NLP → Perfil JSON"
+    },
+    {
+        "id": "batna-calculator",
+        "name": "BATNA Calculator",
+        "area": "litigios",
+        "description": "Calcula BATNA usando Game Theory para optimizar estrategia de negociación",
+        "topology": "Posiciones → Nash Equilibrium → Estrategia"
+    },
+    {
+        "id": "discovery-gap-hunter",
+        "name": "Discovery Gap Hunter",
+        "area": "litigios",
+        "description": "Detecta documentos faltantes en discovery mediante análisis de referencias cruzadas",
+        "topology": "Corpus → Ref Extraction → Gap Detection"
+    },
+    {
+        "id": "timeline-reconstruction",
+        "name": "Timeline Reconstruction",
+        "area": "forensia",
+        "description": "Cronología unificada desde emails/PDFs con normalización UTC y detección de gaps anómalos",
+        "topology": "Docs → Metadata → UTC → Timeline + Anomalías"
+    },
+    {
+        "id": "metadata-archaeologist",
+        "name": "Metadata Archaeologist",
+        "area": "forensia",
+        "description": "Recupera versiones ocultas y metadatos eliminados de documentos",
+        "topology": "Archivos → EXIF/OLE → Historial"
+    },
+    {
+        "id": "audio-tamper-alert",
+        "name": "Audio Tamper Alert",
+        "area": "forensia",
+        "description": "Detecta manipulación en grabaciones mediante análisis espectral",
+        "topology": "Audio → Spectral Analysis → Tampering Report"
+    },
+    {
+        "id": "pii-contextual-sanitizer",
+        "name": "PII Contextual Sanitizer",
+        "area": "forensia",
+        "description": "Redacción inteligente que preserva contexto legal mientras anonimiza datos personales",
+        "topology": "Documento → NER → Redacción Selectiva"
+    },
+    {
+        "id": "clause-dependency-graph",
+        "name": "Clause Dependency Graph",
+        "area": "corporativo",
+        "description": "Visualiza impacto de cambios en definiciones contractuales usando NetworkX",
+        "topology": "Contrato → Grafo → Ciclos/Huérfanos/Impacto"
+    },
+    {
+        "id": "cap-table-simulator",
+        "name": "Cap Table Simulator",
+        "area": "corporativo",
+        "description": "Simulador de dilución para rondas de financiación y equity",
+        "topology": "Cap Table → Escenarios → Dilution Model"
+    },
+    {
+        "id": "risk-heatmap-gen",
+        "name": "Risk Heatmap Generator",
+        "area": "corporativo",
+        "description": "Genera heatmaps de riesgo para Due Diligence M&A",
+        "topology": "DD Findings → Risk Matrix → Heatmap"
+    },
+    {
+        "id": "force-majeure-trigger",
+        "name": "Force Majeure Trigger",
+        "area": "corporativo",
+        "description": "Análisis de activación de cláusulas de fuerza mayor según eventos externos",
+        "topology": "Eventos → Matching → Trigger Assessment"
+    },
+    {
+        "id": "transfer-pricing-bot",
+        "name": "Transfer Pricing Bot",
+        "area": "fiscal",
+        "description": "Análisis de precios de transferencia entre entidades relacionadas",
+        "topology": "Transacciones → Arm's Length → Informe"
+    },
+    {
+        "id": "transfer-pricing-benchmarker",
+        "name": "Transfer Pricing Benchmarker",
+        "area": "fiscal",
+        "description": "Benchmark de márgenes contra comparables del mercado",
+        "topology": "Financials → DB Comparables → Ranking"
+    },
+    {
+        "id": "vat-carousel-flag",
+        "name": "VAT Carousel Flag",
+        "area": "fiscal",
+        "description": "Detección de patrones de fraude IVA carrusel en cadenas de facturación",
+        "topology": "Facturas → Pattern Matching → Red Flags"
+    },
+    {
+        "id": "financial-stress-test",
+        "name": "Financial Stress Test",
+        "area": "fiscal",
+        "description": "Z-Score Altman para predicción de quiebra empresarial",
+        "topology": "Estados Financieros → Z-Score → Risk Level"
+    },
+    {
+        "id": "pe-exposure-scanner",
+        "name": "PE Exposure Scanner",
+        "area": "fiscal",
+        "description": "Escaneo de exposición a Establecimiento Permanente fiscal",
+        "topology": "Actividades → PE Rules → Exposure Report"
+    },
+    {
+        "id": "r-d-claim-extractor",
+        "name": "R&D Claim Extractor",
+        "area": "fiscal",
+        "description": "Extracción automatizada de gastos elegibles para deducciones I+D",
+        "topology": "Contabilidad → Matching → Claim Export"
+    },
+    {
+        "id": "bias-auditor",
+        "name": "Bias Auditor",
+        "area": "laboral",
+        "description": "Detección de sesgos en procesos de selección y promoción",
+        "topology": "Datos HR → Statistical Analysis → Bias Report"
+    },
+    {
+        "id": "flight-risk-detector",
+        "name": "Flight Risk Detector",
+        "area": "laboral",
+        "description": "Predicción de riesgo de fuga de empleados clave",
+        "topology": "Señales → ML Model → Risk Score"
+    },
+    {
+        "id": "salary-equity-calc",
+        "name": "Salary Equity Calculator",
+        "area": "laboral",
+        "description": "Cálculo de brecha salarial por género, categoría y antigüedad",
+        "topology": "Nóminas → Regression → Gap Analysis"
+    },
+    {
+        "id": "non-compete-validator",
+        "name": "Non-Compete Validator",
+        "area": "laboral",
+        "description": "Validación de cláusulas de no competencia según jurisdicción",
+        "topology": "Cláusula → Jurisdicción → Validity Check"
+    },
+    {
+        "id": "severance-optimizer",
+        "name": "Severance Optimizer",
+        "area": "laboral",
+        "description": "Optimización de indemnizaciones por despido según escenarios legales",
+        "topology": "Perfil → Cálculo Legal → Escenarios"
+    },
+    {
+        "id": "whistleblower-risk-scorer",
+        "name": "Whistleblower Risk Scorer",
+        "area": "laboral",
+        "description": "Evaluación de riesgo basada en denuncias internas",
+        "topology": "Denuncias → NLP → Risk Assessment"
+    },
+    {
+        "id": "shell-co-detector",
+        "name": "Shell Company Detector",
+        "area": "compliance",
+        "description": "Detección de empresas pantalla mediante heurísticas corporativas",
+        "topology": "Corporate Data → Heuristics → Shell Score"
+    },
+    {
+        "id": "ip-overlap-scanner",
+        "name": "IP Overlap Scanner",
+        "area": "compliance",
+        "description": "Detección de plagio de código y propiedad intelectual",
+        "topology": "Codebase → Similarity → Overlap Report"
+    },
+    {
+        "id": "gdpr-consent-tracker",
+        "name": "GDPR Consent Tracker",
+        "area": "compliance",
+        "description": "Tracking y auditoría de consentimientos GDPR",
+        "topology": "Consents → Timeline → Compliance Status"
+    },
+    {
+        "id": "ai-ethics-auditor",
+        "name": "AI Ethics Auditor",
+        "area": "compliance",
+        "description": "Auditoría ética de sistemas de IA según estándares EU AI Act",
+        "topology": "AI System → Ethics Checklist → Audit Report"
+    }
+]

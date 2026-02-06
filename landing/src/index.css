@@ -1,0 +1,299 @@
+/* ===========================================
+   GARRIGUES DESIGN TOKENS - LegalTech Landing
+   =========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Brand Colors - Pantone 3308 C */
+  --g-brand-3308: #004438;
+  --g-brand-bright: #009a77;
+  --g-sec-700: #007362;
+  --g-sec-300: #6dc1b0;
+  --g-sec-100: #d8ece7;
+
+  /* Text Colors */
+  --g-text-primary: #4a4a49;
+  --g-text-secondary: #50564f;
+  --g-text-inverse: #ffffff;
+  --g-link: #004438;
+  --g-link-hover: #007362;
+
+  /* Surfaces */
+  --g-surface-page: #f8fafb;
+  --g-surface-card: #ffffff;
+  --g-surface-subtle: #f3f4f6;
+
+  /* Borders */
+  --g-border-default: #d1d5db;
+  --g-border-subtle: #e5e7eb;
+
+  /* Spacing (4px grid) */
+  --g-space-1: 4px;
+  --g-space-2: 8px;
+  --g-space-3: 12px;
+  --g-space-4: 16px;
+  --g-space-6: 24px;
+  --g-space-8: 32px;
+
+  /* Border Radius */
+  --g-radius-sm: 6px;
+  --g-radius-md: 8px;
+  --g-radius-lg: 10px;
+  --g-radius-xl: 16px;
+  --g-radius-full: 9999px;
+
+  /* Shadows */
+  --g-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --g-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --g-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  /* Area Colors */
+  --area-litigios: #004438;
+  --area-forensia: #7c3aed;
+  --area-corporativo: #2563eb;
+  --area-fiscal: #d97706;
+  --area-laboral: #dc2626;
+  --area-compliance: #059669;
+}
+
+/* ===========================================
+   RESET & BASE
+   =========================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: var(--g-surface-page);
+  color: var(--g-text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===========================================
+   TYPOGRAPHY
+   =========================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--g-text-primary);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+  color: var(--g-text-secondary);
+}
+
+a {
+  color: var(--g-link);
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+a:hover {
+  color: var(--g-link-hover);
+}
+
+/* ===========================================
+   UTILITIES
+   =========================================== */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 var(--g-space-6);
+}
+
+.text-inverse {
+  color: var(--g-text-inverse);
+}
+
+.bg-brand {
+  background-color: var(--g-brand-3308);
+}
+
+/* ===========================================
+   BUTTONS
+   =========================================== */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--g-space-2);
+  padding: var(--g-space-3) var(--g-space-4);
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: var(--g-radius-md);
+  border: none;
+  cursor: pointer;
+  transition: all 150ms ease;
+}
+
+.btn-primary {
+  background-color: var(--g-brand-3308);
+  color: var(--g-text-inverse);
+}
+
+.btn-primary:hover {
+  background-color: var(--g-sec-700);
+}
+
+.btn-secondary {
+  background-color: var(--g-sec-100);
+  color: var(--g-text-primary);
+}
+
+.btn-secondary:hover {
+  background-color: var(--g-sec-300);
+}
+
+.btn-ghost {
+  background-color: transparent;
+  color: var(--g-text-primary);
+  border: 1px solid var(--g-border-default);
+}
+
+.btn-ghost:hover {
+  background-color: var(--g-surface-subtle);
+}
+
+.btn-filter {
+  padding: var(--g-space-2) var(--g-space-4);
+  font-size: 0.75rem;
+  border-radius: var(--g-radius-full);
+  background-color: var(--g-surface-card);
+  color: var(--g-text-secondary);
+  border: 1px solid var(--g-border-subtle);
+}
+
+.btn-filter:hover {
+  border-color: var(--g-brand-3308);
+  color: var(--g-brand-3308);
+}
+
+.btn-filter.active {
+  background-color: var(--g-brand-3308);
+  color: var(--g-text-inverse);
+  border-color: var(--g-brand-3308);
+}
+
+/* ===========================================
+   CARDS
+   =========================================== */
+
+.card {
+  background-color: var(--g-surface-card);
+  border: 1px solid var(--g-border-default);
+  border-radius: var(--g-radius-lg);
+  padding: var(--g-space-6);
+  box-shadow: var(--g-shadow-sm);
+  transition: all 200ms ease;
+}
+
+.card:hover {
+  box-shadow: var(--g-shadow-md);
+  border-color: rgba(0, 68, 56, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===========================================
+   BADGES
+   =========================================== */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--g-space-1) var(--g-space-2);
+  font-size: 0.625rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-radius: var(--g-radius-sm);
+}
+
+.badge-litigios {
+  background-color: rgba(0, 68, 56, 0.1);
+  color: var(--area-litigios);
+}
+
+.badge-forensia {
+  background-color: rgba(124, 58, 237, 0.1);
+  color: var(--area-forensia);
+}
+
+.badge-corporativo {
+  background-color: rgba(37, 99, 235, 0.1);
+  color: var(--area-corporativo);
+}
+
+.badge-fiscal {
+  background-color: rgba(217, 119, 6, 0.1);
+  color: var(--area-fiscal);
+}
+
+.badge-laboral {
+  background-color: rgba(220, 38, 38, 0.1);
+  color: var(--area-laboral);
+}
+
+.badge-compliance {
+  background-color: rgba(5, 150, 105, 0.1);
+  color: var(--area-compliance);
+}
+
+/* ===========================================
+   GRID
+   =========================================== */
+
+.grid {
+  display: grid;
+  gap: var(--g-space-6);
+}
+
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ===========================================
+   ANIMATIONS
+   =========================================== */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.animation-delay-100 { animation-delay: 100ms; }
+.animation-delay-200 { animation-delay: 200ms; }
+.animation-delay-300 { animation-delay: 300ms; }
