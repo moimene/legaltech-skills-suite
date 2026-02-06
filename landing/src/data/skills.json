@@ -77,6 +77,41 @@
         "topology": "Eventos → Matching → Trigger Assessment"
     },
     {
+        "id": "contracts-coc-mapper",
+        "name": "Contracts CoC Mapper",
+        "area": "corporativo",
+        "description": "DD M&A: Detección de cláusulas CoC, anti-assignment, exclusividades. Plan de consentimientos con cronograma y plantillas",
+        "topology": "Contratos → NLP Cláusulas → Scoring Criticidad → Plan Consentimientos"
+    },
+    {
+        "id": "contingencies-harvester",
+        "name": "Contingencies Harvester",
+        "area": "corporativo",
+        "description": "DD M&A: Localiza obligaciones off-balance (avales, garantías, cross-defaults). Cuantificación IAS 37 y debt-like items",
+        "topology": "Contratos + Memoria → Clasificación PGC/IAS → Cross-Default Map → SPA Recs"
+    },
+    {
+        "id": "regulatory-fdi-planner",
+        "name": "Regulatory FDI Planner",
+        "area": "corporativo",
+        "description": "DD M&A: Mapea licencias sectoriales, notificaciones FDI (RD 571/2023) y antitrust (CNMC/UE). Plan regulatorio con lead-times",
+        "topology": "Licencias + Deal → FDI Decision Tree → Gap Analysis → Filing Roadmap"
+    },
+    {
+        "id": "people-labor-analyzer",
+        "name": "People & Labor Analyzer",
+        "area": "corporativo",
+        "description": "DD M&A: Análisis de plantilla, fraude temporal, cesión ilegal, severance exposure. Plan de retención key people",
+        "topology": "Plantilla + Nóminas → Riesgos Laborales → Scenarios ERE → Retention Plan"
+    },
+    {
+        "id": "privacy-cyber-scanner",
+        "name": "Privacy Cyber Scanner",
+        "area": "corporativo",
+        "description": "DD M&A: Evaluación RGPD/LOPDGDD, ciberseguridad NIS2/ENS, riesgos OSS/copyleft. Playbook de remediación",
+        "topology": "RAT + Sistemas + SBOM → Gaps Privacy/Security → OSS Risks → Remediation"
+    },
+    {
         "id": "transfer-pricing-bot",
         "name": "Transfer Pricing Bot",
         "area": "fiscal",
