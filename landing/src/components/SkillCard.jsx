@@ -5,7 +5,8 @@ import {
     Calculator,
     Users,
     ShieldCheck,
-    ArrowRight
+    ArrowRight,
+    ExternalLink
 } from 'lucide-react';
 
 const areaIcons = {
@@ -26,17 +27,25 @@ const areaLabels = {
     compliance: 'Compliance'
 };
 
+const REPO_BASE = 'https://github.com/moimene/legaltech-skills-suite';
+
 export default function SkillCard({ skill, index }) {
     const Icon = areaIcons[skill.area] || Scale;
+    const skillUrl = `${REPO_BASE}/tree/main/${skill.area}/${skill.id}`;
 
     return (
-        <article
+        <a
+            href={skillUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="card animate-fadeInUp"
             style={{
                 animationDelay: `${index * 50}ms`,
                 display: 'flex',
                 flexDirection: 'column',
-                height: '100%'
+                height: '100%',
+                textDecoration: 'none',
+                cursor: 'pointer'
             }}
         >
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--g-space-4)' }}>
@@ -85,7 +94,10 @@ export default function SkillCard({ skill, index }) {
                     padding: 'var(--g-space-3)',
                     backgroundColor: 'var(--g-surface-subtle)',
                     borderRadius: 'var(--g-radius-sm)',
-                    marginTop: 'auto'
+                    marginTop: 'auto',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center'
                 }}
             >
                 <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--g-space-2)' }}>
@@ -100,7 +112,8 @@ export default function SkillCard({ skill, index }) {
                         {skill.topology}
                     </code>
                 </div>
+                <ExternalLink size={14} color="var(--g-brand-3308)" />
             </div>
-        </article>
+        </a>
     );
 }

@@ -1,5 +1,6 @@
 import { useState, useMemo } from 'react';
 import Hero from './components/Hero';
+import RepoBanner from './components/RepoBanner';
 import AreaFilter from './components/AreaFilter';
 import SkillCard from './components/SkillCard';
 import Footer from './components/Footer';
@@ -25,6 +26,7 @@ export default function App() {
   return (
     <div className="app">
       <Hero skillCount={skills.length} />
+      <RepoBanner />
 
       <main className="container">
         <section style={{ textAlign: 'center', padding: 'var(--g-space-8) 0 0' }}>
